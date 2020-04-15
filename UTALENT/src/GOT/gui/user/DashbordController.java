@@ -6,6 +6,7 @@
 package GOT.gui.user;
 
 import GOT.entites.user.User;
+import GOT.utils.SessionUser;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
@@ -23,6 +24,8 @@ public class DashbordController implements Initializable {
      
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+              System.out.println(SessionUser.getUser().getUsername());
+
     }    
   
 }

@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 avr. 2020, 23:37:44
+    Author     : HP
+*/
+
+.btn-choose {
+    -fx-font-size: 18px;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 5;
+    -fx-cursor: hand
+}
+
+.btn {
+    -fx-font-size: 18px;
+    -fx-background-radius: 18;
+    -fx-cursor: hand
+}
+ 

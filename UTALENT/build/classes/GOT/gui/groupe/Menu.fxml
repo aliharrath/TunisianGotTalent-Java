@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="814.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GOT.gui.groupe.MenuController">
+   <children>
+      <Pane layoutY="-143.0" prefHeight="303.0" prefWidth="467.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;">
+         <children>
+            <Label layoutX="20.0" layoutY="151.0" prefHeight="130.0" prefWidth="434.0" text="GROUPES OF UTALENT" textFill="#f5f5f5">
+               <font>
+                  <Font name="Kristen ITC" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="back" fitHeight="34.0" fitWidth="34.0" layoutX="14.0" layoutY="152.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/back.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="106.0" layoutY="188.0">
+         <children>
+            <Button fx:id="mygroup" mnemonicParsing="false" onMouseClicked="#MyGroup" opacity="0.7" prefHeight="190.0" prefWidth="168.0" styleClass="button2" stylesheets="@../../../css/fullpackstyling.css" />
+            <Label alignment="CENTER" layoutX="-6.0" layoutY="146.0" prefHeight="17.0" prefWidth="174.0" text="Mes Groupes" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="130.0" fitWidth="146.0" layoutX="17.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/Mygroup.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="347.0" layoutY="188.0" prefHeight="202.0" prefWidth="179.0">
+         <children>
+            <Button fx:id="IN" mnemonicParsing="false" onMouseClicked="#Ingroup" opacity="0.7" prefHeight="190.0" prefWidth="168.0" styleClass="button2" stylesheets="@../../../css/fullpackstyling.css" />
+            <Label alignment="CENTER" layoutY="156.0" prefHeight="17.0" prefWidth="168.0" text="Groups I'm in" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="140.0" fitWidth="147.0" layoutX="16.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/membre.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="589.0" layoutY="188.0" prefHeight="190.0" prefWidth="174.0">
+         <children>
+            <Button fx:id="other" mnemonicParsing="false" onMouseClicked="#Other" opacity="0.7" prefHeight="190.0" prefWidth="168.0" styleClass="button2" stylesheets="@../../../css/fullpackstyling.css" />
+            <Label alignment="CENTER" layoutX="1.0" layoutY="146.0" prefHeight="17.0" prefWidth="168.0" text="Autres Groupes" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="130.0" fitWidth="117.0" layoutX="27.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/autre_grp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="508.0" layoutY="27.0" text="OUR TALENT " textFill="#fffdfd">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="589.0" layoutY="19.0" text="Label" />
+   </children>
+</AnchorPane>

@@ -10,7 +10,6 @@ import GOT.utils.BCrypt;
 import GOT.utils.EmailAttachmentSender;
 import GOT.utils.MyConnection;
 import GOT.utils.SessionUser;
-import GOT.utils.StaticValue;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -124,7 +123,6 @@ public class UserService {
             ps.setString(13, u.getTypec());
             ps.setInt(14, 0);
             EmailAttachmentSender.sendEmailWithAttachments(u.getEmail(), "Confirmation du Compte UTalent", "<h1> Cher utilisateur,</h1></br> <p>Nous avons l'honneur de vous accueiller parmi notre famille. </p>");
-
             ps.executeUpdate();
                 System.out.println("Insertion  Reussie!");
          }
@@ -134,10 +132,7 @@ public class UserService {
 
     }
     
-    public void connect(User u)
-    {
-        StaticValue.utilisateur=u;
-    }
+  
 
     public User displayUser(int idUser) {
         User u = null;
@@ -277,6 +272,27 @@ public class UserService {
             a.printStackTrace();
         }
         return check;
+    }
+   public boolean update( int nb_diamants, int idUser) throws SQLException {
+        String sql = "UPDATE fos_user SET nb_diamants=?  WHERE id='" + idUser + "'";
+        
+        PreparedStatement statement = con.prepareStatement(sql);
+      
+        statement.setInt(1, nb_diamants);
+        
+
+             
+
+     
+     
+        
+        int rowsUpdated = statement.executeUpdate();
+        if (rowsUpdated > 0) {
+            
+            
+            System.out.println("An existing user was updated successfully!");
+        }
+        return true;
     }
   
 

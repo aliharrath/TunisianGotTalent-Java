@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ass" prefHeight="555.0" prefWidth="908.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 5;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GOT.gui.groupe.EditGroupeController">
+    <stylesheets>
+        <URL value="@updateeventfxml.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="231.0" layoutY="129.0" text="Nom du groupe" textFill="#2c2b2a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="286.0" text="photo">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nonevent" layoutX="419.0" layoutY="127.0" prefHeight="25.0" prefWidth="145.0" unFocusColor="#eea004" />
+      <JFXButton id="backtolist" fx:id="backtolist" buttonType="RAISED" layoutX="316.0" layoutY="393.0" onAction="#validUpdate" prefHeight="85.0" prefWidth="207.0" style="-fx-background-color: #e44d3a;" text="Enregistrer vos modifications" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="5.0" prefHeight="72.0" prefWidth="908.0" style="-fx-border-width: 3; -fx-background-color: #f9d9d5;" text="                                                                                EDIT" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="aj" layoutX="486.0" layoutY="283.0" onAction="#selectPhoto" prefHeight="25.0" prefWidth="171.0" text="modifier la photo " textFill="#eb5e0d" />
+      <ImageView id="img" fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="288.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

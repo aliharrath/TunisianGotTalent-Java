@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" prefHeight="403.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GOT.gui.groupe.DetailController">
+
+<AnchorPane id="AnchorPane ">
+   <children>
+      <ImageView fitHeight="447.0" fitWidth="726.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/detail.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="71.0" prefWidth="726.0" style="-fx-background-color: #d9b1ba;">
+         <children>
+            <ImageView fx:id="back" fitHeight="35.0" fitWidth="43.0" layoutX="14.0" layoutY="18.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/back.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="grp_name" layoutX="66.0" layoutY="15.0" prefHeight="45.0" prefWidth="147.0" text="Label">
+               <font>
+                  <Font name="Kristen ITC" size="23.0" />
+               </font></Label>
+         <JFXButton fx:id="membre" cache="true" layoutX="447.0" layoutY="16.0" prefHeight="39.0" prefWidth="161.0" ripplerFill="#f5f2f2" style="-fx-background-color: #751075;" styleClass="btn" text="Members" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/member.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+      </JFXButton>
+            <ImageView fx:id="close" fitHeight="43.0" fitWidth="73.0" layoutX="669.0" layoutY="14.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="chat" fitHeight="43.0" fitWidth="55.0" layoutX="626.0" layoutY="14.0" onMouseClicked="#Participate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/chat.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton cache="true" layoutX="465.0" layoutY="94.0" prefHeight="43.0" prefWidth="247.0" ripplerFill="#f5f2f2" style="-fx-background-color: #751075;" styleClass="btn" text="ADD PUBLICATION" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ScrollPane layoutX="125.0" layoutY="158.0" prefHeight="216.0" prefWidth="577.0" />
+    
+   </children>
+</AnchorPane>
+</StackPane>

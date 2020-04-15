@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="636.0" spacing="30.0" stylesheets="@alert.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GOT.gui.groupe.ShowdemandsController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="99.0" prefWidth="636.0" style="-fx-background-color: #ee867d;">
+         <children>
+            <ImageView fitHeight="94.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/List.png" />
+               </image>
+            </ImageView>
+            <Label text="Liste des demandes" textFill="WHITE">
+               <font>
+                  <Font name="Kristen ITC" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane fx:id="s1" prefHeight="220.0" prefWidth="636.0">
+         <content>
+            <VBox fx:id="vbox1" prefHeight="200.0" prefWidth="625.0" />
+         </content>
+      </ScrollPane>
+      <JFXButton fx:id="okey" cache="true" onMouseClicked="#close" prefHeight="39.0" prefWidth="161.0" ripplerFill="#f5f2f2" style="-fx-background-color: #ee867d;" styleClass="btn" text="OKEY!" textFill="WHITE">
+         <font>
+            <Font name="Kristen ITC" size="22.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <padding>
+      <Insets bottom="20.0" />
+   </padding>
+</VBox>

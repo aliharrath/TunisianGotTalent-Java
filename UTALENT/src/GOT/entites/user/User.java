@@ -5,8 +5,10 @@
  */
 package GOT.entites.user;
 
+import GOT.entites.groupe.Groupe;
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.Objects;
 
 /**
@@ -38,7 +40,15 @@ public class User implements Serializable {
 
     private Integer id;
   
-  
+    private ArrayList<Groupe> groupes;
+
+    public ArrayList<Groupe> getGroupes() {
+        return groupes;
+    }
+
+    public void setGroupes(ArrayList<Groupe> groupes) {
+        this.groupes = groupes;
+    }
     private String username;
  
     private String usernameCanonical;
@@ -236,6 +246,11 @@ public class User implements Serializable {
         this.facebook_id = facebook_id;
         this.typec = typec;
         this.nb_diamants = nb_diamants;
+    }
+
+    public User(Integer id, String username) {
+        this.id = id;
+        this.username = username;
     }
     
     

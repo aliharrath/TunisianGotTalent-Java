@@ -5,7 +5,11 @@
  */
 package GOT.test;
 
+import GOT.entites.demande.Demande;
+import GOT.entites.groupe.Groupe;
 import GOT.entites.user.User;
+import GOT.services.groupe.DemandeService;
+import GOT.services.groupe.GroupeService;
 import GOT.services.user.UserService;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,9 +21,13 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.Security;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
@@ -29,17 +37,28 @@ import javax.mail.MessagingException;
 
 
 public class MainClass {
-    
+    private static Connection con;
+          static UserService us=new UserService();
+
     public static void main(String[] args) throws NoSuchAlgorithmException, MessagingException 
     { 
        Timestamp lastlogin= new Timestamp(System.currentTimeMillis());
 
-       User u=new User("mama","mama","fathallahmaha29@gmail.com","fathallahmaha29@gmail.com",false,"null","ali",lastlogin,"null",null,"a:0:{}","null","null",0);
+       /*User u=new User("mama","mama","fathallahmaha29@gmail.com","fathallahmaha29@gmail.com",false,"null","ali",lastlogin,"null",null,"a:0:{}","null","null",0);
    
        UserService us=new UserService(); 
       
-      System.out.print(us.checkRole("mama"));
+      System.out.print(us.checkRole("mama"));*/
+      GroupeService gs=new GroupeService();
+      List<Groupe> lg = new ArrayList<Groupe>();
+      lg = gs.affichergpIN(21);
+    for (Groupe d: lg) { 
+      System.out.println(d.toString());}
+    System.out.print(lastlogin);
+    
        
 }
+      
+    
      
 }

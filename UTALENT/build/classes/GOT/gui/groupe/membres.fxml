@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="506.0" spacing="30.0" stylesheets="@alert.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GOT.gui.groupe.MembresController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="99.0" prefWidth="636.0" style="-fx-background-color: #d9b1ba;">
+         <children>
+            <ImageView fitHeight="67.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/team.png" />
+               </image>
+            </ImageView>
+            <Label text="Membres du groupe" textFill="WHITE">
+               <font>
+                  <Font name="Kristen ITC" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" textFill="WHITE">
+               <font>
+                  <Font name="Kristen ITC" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane fx:id="s1" layoutX="5.0" layoutY="5.0" prefHeight="160.0" prefWidth="515.0">
+         <content>
+            <VBox fx:id="vbox1" prefHeight="190.0" prefWidth="498.0" />
+         </content>
+      </ScrollPane>
+      <HBox prefHeight="39.0" prefWidth="100.0">
+         <children>
+            <ImageView fx:id="back" fitHeight="46.0" fitWidth="38.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/back.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="show" cache="true" onMouseClicked="#show" prefHeight="39.0" prefWidth="161.0" ripplerFill="#f5f2f2" style="-fx-background-color: #d9b1ba;" styleClass="btn" text="SHOW ME!" textFill="WHITE">
+               <font>
+                  <Font name="Kristen ITC" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" />
+   </padding>
+</VBox>

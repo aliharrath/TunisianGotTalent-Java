@@ -53,6 +53,11 @@
                   <Label fx:id="msguser" layoutX="120.0" layoutY="190.0" onMouseExited="#verifUsername" prefHeight="17.0" prefWidth="258.0" />
                   <Label fx:id="msgemail" layoutX="120.0" layoutY="258.0" onMouseExited="#verifMail" prefHeight="17.0" prefWidth="258.0" />
                   <Label fx:id="msgchoix" layoutX="125.0" layoutY="403.0" onMouseExited="#Choix" prefHeight="17.0" prefWidth="239.0" />
+                  <Label fx:id="close" layoutX="463.0" layoutY="11.0" onMouseClicked="#close" prefHeight="23.0" prefWidth="29.0" text="X">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
             <AnchorPane fx:id="layer2" layoutX="-7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="354.0" style="-fx-background-color: #e44d3a;">
@@ -75,7 +80,7 @@
                         <Font size="14.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="signup" layoutX="99.0" layoutY="302.0" onMouseClicked="#btn2" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: #e44d3a; -fx-border-radius: 200; -fx-border-color: white; -fx-background-radius: 200; -fx-text-fill: white;" text="SIGN UP">
+                  <JFXButton fx:id="signup" layoutX="100.0" layoutY="322.0" onMouseClicked="#btn2" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: #e44d3a; -fx-border-radius: 200; -fx-border-color: white; -fx-background-radius: 200; -fx-text-fill: white;" text="SIGN UP">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -93,6 +98,9 @@
                      <font>
                         <Font size="15.0" />
                      </font></Label>
+                  <Label fx:id="c1" layoutX="377.0" layoutY="153.0" text="Username" />
+                  <Label fx:id="c2" layoutX="377.0" layoutY="242.0" prefHeight="17.0" prefWidth="54.0" text="Email" />
+                  <Label fx:id="c3" layoutX="377.0" layoutY="279.0" prefHeight="23.0" prefWidth="54.0" text="Password" />
                </children>
             </AnchorPane>
          </children>

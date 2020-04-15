@@ -49,6 +49,12 @@ public class UserController implements Initializable {
     @FXML
     private Label pwverif;
     @FXML
+    private Label c1;
+    @FXML
+    private Label c2;
+    @FXML
+    private Label c3;
+    @FXML
     private Label l1;
     @FXML
     private Label msguser;  
@@ -98,7 +104,10 @@ public class UserController implements Initializable {
     private JFXRadioButton donneur;
     @FXML
     private HBox hb;
+    @FXML
+    private Label close;
   
+   
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -114,6 +123,8 @@ public class UserController implements Initializable {
         username.setVisible(true);
         email.setVisible(true);
         password.setVisible(true);
+      
+  
     }    
 
     @FXML
@@ -145,7 +156,12 @@ public class UserController implements Initializable {
         username.setVisible(false);
         email.setVisible(false);
         password.setVisible(false);
-        
+       // c4.setVisible(false);
+          msgemail.setVisible(false);
+                msguser.setVisible(false);
+                msgchoix.setVisible(false);
+                pwverif.setVisible(false);
+
         slide.setOnFinished((e->{
         
         
@@ -181,11 +197,24 @@ public class UserController implements Initializable {
         username.setVisible(true);
         email.setVisible(true);
         password.setVisible(true);
-        
+        c1.setVisible(true);
+        msgemail.setVisible(true);
+        msguser.setVisible(true);
+        msgchoix.setVisible(true);
+        pwverif.setVisible(true);
+
+        //pwverif.setVisible(false);
         slide.setOnFinished((e->{
         
         
         }));
+    }
+    
+    @FXML
+    private void close(MouseEvent event)
+    {   Stage stage = (Stage) close.getScene().getWindow();
+       // do what you have to do
+       stage.close();
     }
     
   @FXML
@@ -259,7 +288,7 @@ public class UserController implements Initializable {
 
             if (n1.getText().equals("admin")) {
 
-                Parent home_page_parent = FXMLLoader.load(getClass().getResource("Dashbord.fxml"));
+                Parent home_page_parent = FXMLLoader.load(getClass().getResource("../event/eventAdmin.fxml"));
                 Scene home_page_scene = new Scene(home_page_parent);
                 Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 app_stage.hide();
@@ -267,7 +296,7 @@ public class UserController implements Initializable {
                 app_stage.show();
             }
             else if (us.checkRole(n1.getText())) {
-                    //SessionUser.getFirstInstance(SessionUser.getUser());
+                    SessionUser.getFirstInstance(SessionUser.getUser());
                     Parent home_page_parent = FXMLLoader.load(getClass().getResource("FrontFXML.fxml"));
                     Scene home_page_scene = new Scene(home_page_parent);
                     Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
