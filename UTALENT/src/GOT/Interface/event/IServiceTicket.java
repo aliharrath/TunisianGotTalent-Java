@@ -5,7 +5,7 @@
  */
 package GOT.Interface.event;
 
-import GOT.entities.event.ticket;
+import GOT.entites.event.ticket;
 import java.sql.SQLException;
 import java.util.List;
 

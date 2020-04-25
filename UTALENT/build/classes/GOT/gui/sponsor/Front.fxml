@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="1087.0" style="-fx-background-color: #f9d9d5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GOT.gui.sponsor.FrontFXMLController">
+   <children>
+      <AnchorPane prefHeight="649.0" prefWidth="320.0" styleClass="pane1" stylesheets="@../../../css/fullpackstyling.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutY="110.0" prefHeight="486.0" prefWidth="335.0" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="110.0" />
+            <Pane prefHeight="61.0" prefWidth="335.0" style="-fx-background-color: #e44d3a; -fx-background-radius: 5;">
+               <children>
+                  <Label layoutX="84.0" layoutY="6.0" text="Sponsors" textFill="WHITE">
+                     <font>
+                        <Font name="Kristen ITC" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+      <Pane layoutX="262.0" prefHeight="649.0" prefWidth="631.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="-61.0" layoutY="-145.0" prefHeight="263.0" prefWidth="492.0" rotate="41.6" style="-fx-background-color: #e44d3a; -fx-background-radius: 70;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

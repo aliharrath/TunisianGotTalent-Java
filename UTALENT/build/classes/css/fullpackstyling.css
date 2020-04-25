@@ -4,6 +4,11 @@
 -fx-background-size: cover;
     
 }
+.layer2
+{
+-fx-background-image: url("https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/91895080_122809372674817_8586466006476521472_n.jpg?_nc_cat=101&_nc_sid=ca434c&_nc_eui2=AeHLRLDtOgLgrqS5sw9z7rftmgr4a8Y1D9WaCvhrxjUP1a-a-BExQD8OA0Bt6k3zTjJQXXP0cQRQjygQSnJNCl-U&_nc_oc=AQl-SaSg1pZNmeSW32mEsbxmg_LFGMsSC6kDmP2zmK65czuSc7hlt8dwJkizt5nLt_o&_nc_ht=scontent.ftun4-1.fna&oh=f09949f52480010ca51720da19d5ab92&oe=5EC204DA");
+    
+}
 .button1
 {
 -fx-background-color : none;

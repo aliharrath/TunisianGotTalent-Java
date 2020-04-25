@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="514.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GOT.gui.sponsor.Sponsor_showController">
+   <top>
+      <HBox prefHeight="43.0" prefWidth="806.0" style="-fx-background-color: #990033;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Desktop/PIDEV/download.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" top="9.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label text="Retour" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <Pane prefHeight="376.0" prefWidth="200.0" style="-fx-background-color: #b3003b;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="23.0" layoutY="101.0" prefHeight="54.0" prefWidth="201.0" text="Inbox" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Button graphicTextGap="6.0" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: #cc2900;" text="Composer" textFill="#fafafa">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font>
+            </Button>
+            <Label alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="23.0" layoutY="141.0" prefHeight="54.0" prefWidth="201.0" text="Sponsors" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="23.0" layoutY="186.0" prefHeight="54.0" prefWidth="201.0" text="Packs" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="23.0" layoutY="232.0" prefHeight="54.0" prefWidth="201.0" text="Statistiques" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="24.0" layoutY="22.0" prefHeight="27.0" prefWidth="125.0" text="Sponsor Detail">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button graphicTextGap="6.0" layoutX="428.0" layoutY="18.0" mnemonicParsing="false" onAction="#addButtonClicked" onMouseClicked="#delete" prefHeight="36.0" prefWidth="121.0" style="-fx-background-color: #cc2900;" text="Supprimer " textFill="#fafafa">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="6.0" layoutX="301.0" layoutY="18.0" mnemonicParsing="false" onAction="#addButtonClicked" onMouseClicked="#edit" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: #cc2900;" text="Editer" textFill="#fafafa">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="284.0" fitWidth="297.0" layoutX="14.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Desktop/PIDEV/nat.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="31.0" layoutY="385.0" prefHeight="27.0" prefWidth="125.0" text="Sponsor Nom">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="304.0" layoutY="130.0" prefHeight="6.0" prefWidth="248.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

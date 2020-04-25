@@ -8,9 +8,9 @@ package GOT.services.event;
 
 import GOT.Interface.event.IServiceParticipation;
 import GOT.entites.user.User;
-import GOT.entities.event.evenement;
-import GOT.entities.event.participation;
-import GOT.entities.event.ticket;
+import GOT.entites.event.evenement;
+import GOT.entites.event.participation;
+import GOT.entites.event.ticket;
 import GOT.services.user.UserService;
 import GOT.utils.MyConnection;
 import java.sql.Connection;

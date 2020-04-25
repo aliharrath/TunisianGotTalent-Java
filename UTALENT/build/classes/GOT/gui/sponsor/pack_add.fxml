@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" prefHeight="600" prefWidth="1024.0" styleClass="parent" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GOT.gui.sponsor.Pack_addController">
+    <children>
+        <VBox fx:id="inbox" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="300.0" styleClass="sidebar">
+            <children>
+                <Label prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #00A2D3;" text="UTALENT ADMINISTRATOR" textFill="WHITE">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <font>
+                        <Font name="Ebrima" size="18.0" />
+                    </font>
+                </Label>
+                <HBox alignment="CENTER_LEFT">
+                    <children>
+                  <JFXTextField alignment="CENTER" prefHeight="26.0" prefWidth="249.0" promptText="search" />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                    <children>
+                        <Label text="Dashboard" textFill="#7c8184">
+                            <font>
+                                <Font name="Calibri Light" size="15.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                 
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+               <children>
+                  <Button alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sponsorBtn" prefHeight="42.0" prefWidth="295.0" style="-fx-background-color: transparent;" text="Sponsors" textFill="#7c8184">
+                     <font>
+                        <Font name="Calibri Light" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+                 
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+               <children>
+                  <Button alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#packBtn" prefHeight="42.0" prefWidth="295.0" style="-fx-background-color: transparent;" text="Publicités" textFill="#7c8184">
+                     <font>
+                        <Font name="Calibri Light" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+                 
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+               <children>
+                  <Button alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#inboxBtn" prefHeight="42.0" prefWidth="295.0" style="-fx-background-color: transparent;" text="Inbox" textFill="#7c8184">
+                     <font>
+                        <Font name="Calibri Light" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+                   
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="252.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+               <children>
+                  <Button alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="42.0" prefWidth="295.0" style="-fx-background-color: transparent;" text="Statistiques" textFill="#7c8184">
+                     <font>
+                        <Font name="Calibri Light" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+                
+                </HBox>
+            </children>
+        </VBox>
+      <HBox layoutX="300.0" layoutY="-6.0" prefHeight="606.0" prefWidth="723.0">
+         <children>
+            <Pane prefHeight="601.0" prefWidth="703.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <Label layoutY="4.0" prefHeight="79.0" prefWidth="723.0" style="-fx-background-color: #f2f2f2;" text="AJOUTER PUBLICITE">
+                     <font>
+                        <Font name="Ebrima Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <JFXTextField fx:id="price" layoutX="436.0" layoutY="121.0" onKeyReleased="#controleSaisi" prefHeight="25.0" prefWidth="250.0" promptText="Entrer le prix" />
+                  <Label alignment="CENTER_RIGHT" layoutX="375.0" layoutY="130.0" prefHeight="20.0" prefWidth="44.0" text="Prix">
+                     <font>
+                        <Font name="Ebrima" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="190.0" prefHeight="20.0" prefWidth="83.0" text="Date Display ">
+                     <font>
+                        <Font name="Ebrima" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="41.0" layoutY="129.0" text="Position">
+                     <font>
+                        <Font name="Ebrima" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="15.0" layoutY="256.0" prefHeight="17.0" prefWidth="76.0" text="Sponsor">
+                     <font>
+                        <Font name="Ebrima" size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="ad" layoutX="438.0" layoutY="257.0" onKeyReleased="#controleSaisi" prefHeight="30.0" prefWidth="207.0" promptText="Upload.." />
+                  <Button layoutX="645.0" layoutY="256.0" mnemonicParsing="false" onAction="#uploadBtn" prefHeight="30.0" prefWidth="44.0" style="-fx-background-color: #00A2D3;" text="📁" textFill="WHITE" />
+                  <Button layoutX="114.0" layoutY="388.0" mnemonicParsing="false" onAction="#saveBtn" prefHeight="40.0" prefWidth="257.0" style="-fx-background-color: #00A2D3;" text="Ajouter" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="notif" layoutX="181.0" layoutY="509.0" prefHeight="40.0" prefWidth="180.0" textFill="#5db70f">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="disp" layoutX="114.0" layoutY="189.0" onKeyReleased="#controleSaisi" prefHeight="30.0" prefWidth="250.0" />
+                  <DatePicker fx:id="disc" layoutX="437.0" layoutY="189.0" prefHeight="30.0" prefWidth="250.0" />
+                  <ImageView fx:id="imageAd" fitHeight="208.0" fitWidth="257.0" layoutX="429.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" />
+                  <ChoiceBox fx:id="posChoice" layoutX="113.0" layoutY="122.0" prefHeight="30.0" prefWidth="250.0" />
+                  <ChoiceBox fx:id="spChoice" layoutX="117.0" layoutY="256.0" prefHeight="30.0" prefWidth="250.0" />
+                  <Label fx:id="errpos" layoutX="113.0" layoutY="160.0" textFill="#ff0000" />
+                  <Label fx:id="errprix" layoutX="438.0" layoutY="160.0" textFill="#ff0000" />
+                  <Label fx:id="errdisp" layoutX="113.0" layoutY="229.0" textFill="#ff0000" />
+                  <Label fx:id="errdisc" layoutX="438.0" layoutY="229.0" textFill="#ff0000" />
+                  <Label fx:id="errspon" layoutX="116.0" layoutY="295.0" textFill="#ff0000" />
+                  <Label fx:id="errad" layoutX="438.0" layoutY="295.0" textFill="#ff0000" />
+               </children></Pane>
+         </children>
+      </HBox>
+    </children>
+   <stylesheets>
+      <URL value="@stylesheet.css" />
+      <URL value="@../../../css/stylesheet.css" />
+   </stylesheets>
+</AnchorPane>

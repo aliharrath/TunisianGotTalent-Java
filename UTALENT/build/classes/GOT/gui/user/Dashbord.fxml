@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="parent" prefHeight="600" prefWidth="1024.0" styleClass="parent" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GOT.gui.user.DashbordController">
+<AnchorPane fx:id="parent" prefHeight="600" prefWidth="1024.0" styleClass="parent" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="GOT.gui.user.TestController">
     <children>
         <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="300.0" styleClass="sidebar">
             <children>
@@ -36,9 +36,9 @@
                         <Insets top="10.0" />
                     </VBox.margin>
                 </HBox>
-                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  prefHeight="40.0" prefWidth="300.0" styleClass="btns">
                     <children>
-                        <Label text="Dashboard" textFill="#7c8184">
+                        <Label text="Groupe" textFill="#7c8184">
                             <font>
                                 <Font name="Calibri Light" size="15.0" />
                             </font>
@@ -55,9 +55,9 @@
                     </VBox.margin>
                  
                 </HBox>
-                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                <HBox  fx:id="event" onMouseClicked="#event" alignment="CENTER_LEFT" layoutX="10.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
                     <children>
-                        <Label text="Projects" textFill="#7c8184">
+                        <Label text="Evenement" textFill="#7c8184">
                             <font>
                                 <Font name="Calibri Light" size="15.0" />
                             </font>
@@ -71,9 +71,9 @@
                     </padding>
                  
                 </HBox>
-                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                <HBox  fx:id="sponsors" onMouseClicked="#Sponsors" alignment="CENTER_LEFT" layoutX="10.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  prefHeight="40.0" prefWidth="300.0" styleClass="btns">
                     <children>
-                        <Label text="Users" textFill="#7c8184">
+                        <Label text="Sponors" textFill="#7c8184">
                             <font>
                                 <Font name="Calibri Light" size="15.0" />
                             </font>
@@ -89,7 +89,7 @@
                 </HBox>
                 <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
                     <children>
-                        <Label text="Resource" textFill="#7c8184">
+                        <Label text="Reclamation" textFill="#7c8184">
                             <font>
                                 <Font name="Calibri Light" size="15.0" />
                             </font>
@@ -103,9 +103,9 @@
                     </padding>
                    
                 </HBox>
-                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="252.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="252.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  prefHeight="40.0" prefWidth="300.0" styleClass="btns">
                     <children>
-                        <Label text="Documents" textFill="#7c8184">
+                        <Label text="Publication" textFill="#7c8184">
                             <font>
                                 <Font name="Calibri Light" size="15.0" />
                             </font>
@@ -119,6 +119,21 @@
                     </padding>
                 
                 </HBox>
+            <HBox fx:id="log" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#logout" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+               <children>
+                  <Label text="Logout" textFill="#7c8184">
+                     <font>
+                        <Font name="Calibri Light" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
             </children>
         </VBox>
         <VBox layoutX="300.0" prefHeight="600.0" prefWidth="724.0" />

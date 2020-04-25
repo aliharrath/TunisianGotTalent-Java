@@ -6,8 +6,8 @@
 package GOT.gui.event;
 
 import GOT.entites.user.User;
-import GOT.entities.event.evenement;
-import GOT.entities.event.participation;
+import GOT.entites.event.evenement;
+import GOT.entites.event.participation;
 import GOT.services.event.ServiceEvenement;
 import GOT.services.event.ServiceTicket;
 import GOT.services.event.Serviceparticipation;

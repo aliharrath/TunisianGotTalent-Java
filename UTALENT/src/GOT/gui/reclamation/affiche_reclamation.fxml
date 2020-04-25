@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GOT.gui.reclamation.Affiche_RecController">
+   <children>
+      <AnchorPane fx:id="blr" minHeight="0.0" minWidth="0.0" prefHeight="511.0" prefWidth="743.0">
+         <children>
+            <Line endX="-53.199981689453125" endY="-267.0" layoutX="161.0" layoutY="269.0" startX="-152.60000610351562" startY="-267.0" stroke="#e44d3a" strokeWidth="4.0" />
+            <Button fx:id="update" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" graphicTextGap="35.0" layoutX="387.0" layoutY="457.0" mnemonicParsing="false" onAction="#update" prefHeight="36.0" prefWidth="77.0" style="-fx-background-color: #E44D3A; -fx-background-radius: 30;" text="Modifier" textFill="WHITE" />
+            <Button fx:id="supprimer" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" graphicTextGap="35.0" layoutX="249.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#supprimer" prefHeight="36.0" prefWidth="94.0" style="-fx-background-color: #E44D3A; -fx-background-radius: 30;" text="Supprimer" textFill="WHITE" />
+            <TableView fx:id="tabrec" layoutX="14.0" layoutY="109.0" onMouseClicked="#consult" prefHeight="269.0" prefWidth="714.0">
+               <columns>
+                  <TableColumn fx:id="colid" maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="id" />
+                  <TableColumn fx:id="coluser" maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="id_user" />
+                  <TableColumn fx:id="colType" prefWidth="185.0" text="Type" />
+                  <TableColumn fx:id="colStatus" prefWidth="71.0" text="status" />
+                  <TableColumn fx:id="colDate" prefWidth="116.0" text="Date" />
+               </columns>
+             </TableView>
+            <Text layoutX="20.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous avez " wrappingWidth="76.99999384582043" />
+            <Label fx:id="nbrreclamation" layoutX="92.0" layoutY="62.0" text="Label" />
+            <Label layoutX="118.0" layoutY="62.0" text="réclamations" />
+            <Label fx:id="id" layoutX="594.0" layoutY="24.0" text="Label" />
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="trans" layoutX="93.0" layoutY="71.0" opacity="0.0" prefHeight="366.0" prefWidth="525.0">
+         <children>
+            <Group fx:id="groups">
+               <children>
+                  <AnchorPane fx:id="loadPane" prefHeight="366.0" prefWidth="505.0" />
+                  <JFXButton focusTraversable="false" layoutX="470.0" onAction="#tombolClose" prefHeight="25.0" prefWidth="24.0" text="X">
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Group>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

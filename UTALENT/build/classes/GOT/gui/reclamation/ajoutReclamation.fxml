@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GOT.gui.reclamation.AjoutReclamationController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane prefHeight="476.0" prefWidth="683.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="upload" alignment="CENTER_RIGHT" cacheShape="false" centerShape="false" focusTraversable="false" graphicTextGap="35.0" layoutX="64.0" layoutY="302.0" mnemonicParsing="false" onAction="#uploadbouton" opacity="0.53" prefHeight="36.0" prefWidth="133.0" style="-fx-border-color: black; -fx-border-radius: 15; -fx-background-color: white;" text="Choisir un fichier" AnchorPane.leftAnchor="64.0">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fx:id="listev" fitHeight="18.0" fitWidth="17.0" layoutX="86.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../PIDEV/src/Images/Plan%20de%20travail%20–%202.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="64.0" layoutY="155.0" prefHeight="18.0" prefWidth="121.0" text="description">
+                     <font>
+                        <Font name="FuturaStd-Medium" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="desc" layoutX="63.0" layoutY="183.0" opacity="0.53" prefHeight="55.0" prefWidth="338.0" style="-fx-border-color: black; -fx-border-radius: 15;" />
+                  <Button fx:id="envoyer" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" graphicTextGap="35.0" layoutX="153.0" layoutY="360.0" mnemonicParsing="false" onAction="#envoyer" prefHeight="36.0" prefWidth="169.0" style="-fx-background-color: #E44D3A; -fx-background-radius: 30;" text="Envoyer" textFill="WHITE" />
+                  <Text layoutX="63.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passer une reclamation" wrappingWidth="263.73663330078125">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="64.0" layoutY="75.0" prefHeight="18.0" prefWidth="154.0" text="Type de reclamation">
+                     <font>
+                        <Font name="FuturaStd-Medium" size="15.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="63.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous voulez ajouter un fichier ou une capture ecan importer un fichier" wrappingWidth="338.39999999999986">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="file" layoutX="221.0" layoutY="310.0" />
+                  <ComboBox fx:id="typer" layoutX="68.0" layoutY="96.0" prefHeight="33.0" prefWidth="338.0" style="-fx-border-color: black; -fx-border-radius: 15;" styleClass="-fx-border-color" />
+                  <Label fx:id="id" layoutX="560.0" layoutY="173.0" text="Label" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

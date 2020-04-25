@@ -7,7 +7,7 @@ package GOT.gui.event;
 
 
 import GOT.entites.user.User;
-import GOT.entities.event.evenement;
+import GOT.entites.event.evenement;
 import GOT.services.event.ServiceEvenement;
 import GOT.services.user.UserService;
 import GOT.utils.SessionUser;

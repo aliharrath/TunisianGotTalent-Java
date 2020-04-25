@@ -7,7 +7,7 @@ package GOT.services.event;
 
 
 import GOT.Interface.event.IServiceEvenement;
-import GOT.entities.event.evenement;
+import GOT.entites.event.evenement;
 import GOT.utils.MyConnection;
 import java.sql.Connection;
 import java.sql.Date;

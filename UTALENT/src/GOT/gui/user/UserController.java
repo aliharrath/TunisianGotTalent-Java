@@ -6,6 +6,8 @@
 package GOT.gui.user;
 
 
+
+
 import GOT.entites.user.User;
 import GOT.services.user.UserService;
 import GOT.utils.SessionUser;
@@ -288,7 +290,7 @@ public class UserController implements Initializable {
 
             if (n1.getText().equals("admin")) {
 
-                Parent home_page_parent = FXMLLoader.load(getClass().getResource("../event/eventAdmin.fxml"));
+                Parent home_page_parent = FXMLLoader.load(getClass().getResource("Dashbord.fxml"));
                 Scene home_page_scene = new Scene(home_page_parent);
                 Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 app_stage.hide();

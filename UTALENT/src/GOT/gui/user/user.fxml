@@ -80,7 +80,7 @@
                         <Font size="14.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="signup" layoutX="100.0" layoutY="322.0" onMouseClicked="#btn2" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: #e44d3a; -fx-border-radius: 200; -fx-border-color: white; -fx-background-radius: 200; -fx-text-fill: white;" text="SIGN UP">
+                  <JFXButton fx:id="signup" layoutX="99.0" layoutY="301.0" onMouseClicked="#btn2" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: #e44d3a; -fx-border-radius: 200; -fx-border-color: white; -fx-background-radius: 200; -fx-text-fill: white;" text="SIGN UP">
                      <font>
                         <Font size="14.0" />
                      </font>
