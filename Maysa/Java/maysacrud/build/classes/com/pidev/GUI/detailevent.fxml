@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pidev.GUI.DetaileventController">
+   <children>
+      <Label fx:id="titre" alignment="CENTER" contentDisplay="CENTER" layoutX="221.0" layoutY="18.0" text="Titre" textAlignment="CENTER" textFill="#c92f2f" underline="true">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="dated" layoutX="457.0" layoutY="96.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="datef" layoutX="457.0" layoutY="143.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="223.0" fitWidth="365.0" layoutX="16.0" layoutY="78.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="31.0" fitWidth="41.0" layoutX="407.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/calendar%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="41.0" layoutX="407.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/calendar%20(3).png" />
+         </image>
+      </ImageView>
+      <Label fx:id="type" layoutX="457.0" layoutY="183.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="cout" layoutX="457.0" layoutY="231.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="31.0" fitWidth="41.0" layoutX="407.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/star.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="41.0" layoutX="407.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/diamond.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="description" layoutX="30.0" layoutY="318.0" prefHeight="72.0" prefWidth="503.0" text="Label" />
+      <Label fx:id="nb" layoutX="457.0" layoutY="279.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="31.0" fitWidth="41.0" layoutX="407.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/tick.png" />
+         </image>
+      </ImageView>
+   </children>
+   
+</AnchorPane>
